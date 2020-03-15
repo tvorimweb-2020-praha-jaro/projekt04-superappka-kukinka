@@ -11,13 +11,15 @@ html { box-sizing: border-box; }
  POUZITE PISMO
  Source Sans Pro - rezy pisma light 300, regular 400 a bold 700
  https://fonts.google.com/specimen/Roboto
+ font-family: 'Roboto', sans-serif;
 */
 
 body {
-    padding: 0;
+    padding-bottom: 60px;
+    padding-top: 0;
     margin: 0;
     background-color: #e5e5e5;
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -30,4 +32,106 @@ body {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
-/* ----- zde začni psát vlastní CSS ----- */
+.navigace li {
+  display: inline-block;
+  padding-top: 1em;
+  padding-left: 1.5em;
+} 
+
+.navigace a{
+  text-decoration: none;
+  color: #48418e;
+}
+
+.navigace a:hover{
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.kontejner{
+  background-image: url(images/pozadi.jpg);
+  position: relative;
+  height: 440px;
+}
+
+.fototelefon{
+  position:absolute;
+  bottom:0px;
+  right: 0px
+}
+h1{
+  color:white;
+  font-size: 70px;
+  font-weight: 400;
+  padding-top: 30px;
+  padding-left: 50px;
+}
+
+.popis{
+  color:white;
+  font-size: 25px;
+  padding-left: 50px;
+  padding-bottom: 30px;
+}
+
+.stahnout{
+  padding: 15px;
+  text-decoration: none;
+  border-color:white;
+  border-radius: 5%;
+  color:white;
+  border: solid;
+  border-width:thin;
+  background-color:#48418e;
+  box-shadow: 0 2px 5px #48418e;
+}
+
+.informace{
+  padding: 15px;
+  text-decoration: none;
+  border-color:white;
+  border-radius: 5%;
+  color:white;
+  border: solid;
+  background-color:transparent;
+  margin-left: 50px;
+  border-width:thin;
+  box-shadow: 0 2px 5px #48418e;
+}
+
+
+
+.sloupce{
+  display: flex;
+  text-align: center;
+  color:#25133d;
+  font-size: 12px;
+  padding-bottom: 20px;
+  padding-top: 15px;
+}
+
+.levy{
+  order:1;
+  padding:15px;
+}
+
+.stred{
+  order:2;
+  padding:15px;
+}
+
+.pravy{
+  order:3;
+  padding:15px;
+}
+
+h2{
+  color:#48418e;
+}
+.zakonceni{
+  text-align: center;
+  background-color: #48418e;
+  color:white;
+  font-size: 12px;
+  padding-top:0.1em;
+}
